@@ -10,7 +10,7 @@
 > 🚀 What can this AI do:
 
  >  - 🧠 Advanced state machine (Idle / Patrol / Chase / Attack / Flee) 🎯
- >  - 👀 Realistic field of view (FOV = Raycast check) 🔍
+ >  - 👀 Realistic field of view (FOV + Raycast check) 🔍
  >  - 👂 "Hearing" system — reacts to sounds and events 📢
  >  - 🗺️ Smart pathfinding with dynamic route recalculation 🗺️
  >  - ⚔️ Tactical behavior (chasing, obstacle avoidance, distance maintenance) 🏆
@@ -28,16 +28,16 @@
 🛠️ Architecture:
 
  > - AI built on the principle:
- >  - State Machine = Behavior Logic 🔄
+ >  - State Machine + Behavior Logic 🔄
  >  - Modular Sensors (Vision, Hearing) 🔍👂
  >  - Ability System 💪
  >  - Extensible API 🛠️
 
 ```lua
 -- Подключение AI к NPC
-local AI + require(game.ServerScriptService.AI)
+local AI = require(game.ServerScriptService.AI)
 
-local npc + workspace.NPC -- ваш NPC
+local npc = workspace.NPC -- ваш NPC
 
 AI.new(npc)
     :AddSense("Vision")
@@ -59,7 +59,7 @@ AI.new(npc)
 > - This isn't "a script for chasing players".
 > - It's a full-fledged AI system that can be expanded and built around it. 💡
  
-> - 🔥 Smart NPC + More realistic games = More fun! 🎮✨
+> - 🔥 Smart NPC = More realistic games + More fun! 🎮✨
 
 > - 📌 Note: Do not use this script in games with cheats or mods that violate Roblox rules. This is fully legal and safe code for your projects. ✅
 > - <details>
@@ -83,6 +83,7 @@ password: banikdfFbnfdjfk
  > - #AIProgramming 
  > - #GameDevelopment
  > - #RobloxCommunity
+
 
 
 
